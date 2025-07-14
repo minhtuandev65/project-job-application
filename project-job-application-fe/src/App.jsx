@@ -29,10 +29,11 @@ import ManageUsersDetailAdminPage from "./pages/Admin/ManageUsersAdmin/ManageUse
 import MyProfilePage from "./pages/MyProfilePage/MyProfilePage";
 import ManagePostAdminPage from "./pages/Admin/ManageCompanyAdmin/ManageCompanyAdminPage/ManageCompanyAdminPage";
 import ManageCompanyDetailAdminPage from "./pages/Admin/ManageCompanyAdmin/ManageCompanyDetailAdminPage/ManageCompanyDetailAdminPage";
-import CandidateProfilePage from "./pages/EmployeePage/candidateProfile/candidateProfilePage/candidateProfilePage";
+
 import CandidateProfileDetailPage from "./pages/EmployeePage/candidateProfile/CandidateProfileDetailPage/CandidateProfileDetailPage";
 import SearchPage from "./pages/Search/SearchPage";
 import CompanyList from "./pages/EmployeePage/CompanyList/CompanyList";
+import CandidateProfilePage from "./pages/EmployeePage/candidateProfile/candidateProfilePage/candidateProfilePage";
 
 // Pages
 
