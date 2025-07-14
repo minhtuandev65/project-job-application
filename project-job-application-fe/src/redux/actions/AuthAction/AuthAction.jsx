@@ -12,7 +12,6 @@ import { authServices } from "../../../services/Auth/base/AuthServices";
 import { notificationFunction } from "../../../utils/libs/Notification";
 import { usersServices } from "../../../services/users/users/usersServices";
 import {
-  STATUS_CODE_CREATE,
   STATUS_CODE_OK,
 } from "../../../Utils/Setting/Config";
 
