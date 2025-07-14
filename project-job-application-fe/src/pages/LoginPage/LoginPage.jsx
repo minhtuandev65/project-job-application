@@ -7,8 +7,7 @@ import { useFormik } from "formik";
 import { loginAction } from "../../redux/actions/AuthAction/AuthAction";
 import ButtonCustom from "../../components/ButtonCustom/ButtonCustom";
 import { emailRegex, passwordRegex } from "../../utils/Validators/regex";
-import { authServices } from "../../services/Auth/base/AuthServices";
-import { DOMAIN } from "../../Utils/Setting/Config";
+
 
 export default function LoginPage() {
   const dispatch = useDispatch();
