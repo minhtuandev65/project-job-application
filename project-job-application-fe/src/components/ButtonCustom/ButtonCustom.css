@@ -1,0 +1,69 @@
+/* buttonCustom.css */
+/* Hover hiệu ứng cho button */
+.btnCustom {
+  transition: all 0.3s ease;
+  font-weight: 800 ;
+  border: 1px solid #ffffff ;
+  background: #bcbabe ;
+  color: #ffffff ;
+  border-radius: 10px ;
+  height: 50px ;
+  width: 100% ;
+  font-size: 16px;
+}
+.btnCustom.btnPrimary {
+  background-color: #24d659 !important; /* same as Antd primary */
+  color: white !important;
+  border: 1px solid #24d659 !important;
+}
+
+.btnCustom.btnPrimary:hover {
+  background-color: #66ca84 !important;
+  border: 1px solid #66ca84 !important;
+}
+.btnCustom.btnDanger {
+  background-color: #ff4d4f !important;
+  color: white !important;
+  border: 1px solid #ff4d4f !important;
+}
+.btnCustom.btnDanger:hover {
+  background-color: #ff7875 !important;
+  border: 1px solid #ff7875!important;
+}
+/* Hover override */
+.btnCustom:hover {
+  border: 1px solid #d4d4da  !important;
+  background: #d4d4da !important;
+  color: black !important;
+}
+.active {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+  font-weight: 800 !important;
+}
+
+/* Responsive header */
+@media screen and (max-width: 1024px) {
+  .btnCustom {
+    font-size: 14px !important;
+    height: 44px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btnCustom {
+    font-size: 12px !important;
+    height: 40px !important;
+    border-radius: 10px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btnCustom {
+    font-size: 11px !important;
+    height: 36px !important;
+    border-radius: 10px !important;
+    padding: 0 8px !important;
+  }
+}

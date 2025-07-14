@@ -1,0 +1,2 @@
+export const SET_UPDATE_PROFILE = "SET_UPDATE_PROFILE";
+export const SET_UPLOAD_CV = "SET_UPLOAD_CV";
