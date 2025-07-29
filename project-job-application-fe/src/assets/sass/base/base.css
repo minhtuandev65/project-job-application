@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* tailwind template */
+  .mainTemplate {
+    @apply flex flex-col min-h-screen w-full;
+  }
+  .bg-header-footer-color {
+    @apply bg-gradient-to-r from-[#f1f1f2] to-[#bcbabe];
+  }
+  .mainHeader {
+    @apply shadow-2xl flex justify-between items-center w-full relative z-50 h-[80px] 
+    px-3 sm:px-5 md:px-10 lg:px-[150px];
+  }
+  .logoResponsive {
+    @apply w-[120px] sm:w-[140px] md:w-[160px] lg:w-[200px] h-auto max-w-full;
+  }
+  .linkLogo {
+    @apply flex items-center h-full;
+  }
+  /* tailwind page */
+  .main {
+    @apply h-screen flex justify-center items-center;
+  }
+  .container {
+    @apply shadow-2xl;
+  }
+  .containerPage {
+    @apply justify-between items-center z-50
+    sm:px-5 md:px-10 lg:px-[150px];
+  }
+  .bg-page {
+    @apply bg-gradient-to-r from-[#f3f3f3] to-[#bcdbc2];
+  }
+  .form-page {
+    @apply bg-white w-full max-w-[360px] p-8 md:p-10 rounded-[10px] shadow-xl;
+  }
+  .custom-title {
+    @apply text-center mb-8 !text-[16px] xs:!text-[18px] md:!text-[20px];
+  }
+  .custom-input {
+    @apply h-[50px] md:h-[40px] lg:h-[48px] rounded-[10px] text-base md:text-lg px-3 border border-gray-300;
+  }
+  /* CompanyMap.css */
+  .map-wrapper {
+    @apply max-w-[350px] mx-auto my-5 rounded-2xl shadow-2xl overflow-hidden md:max-w-full;
+  }
+
+  .leaflet-container {
+    @apply w-full h-[500px] rounded-2xl;
+  }
+
+  .map-title {
+    @apply text-center text-lg font-semibold text-gray-800 mb-3;
+  }
+  /* styles.css hoặc file bất kỳ được import vào component */
+  .card-container {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4;
+  }
+
+  .company-card {
+    @apply bg-white rounded-2xl shadow-md overflow-hidden flex flex-col max-w-sm md:max-w-md mx-auto h-full;
+  }
+
+  .company-info {
+    @apply p-4 flex flex-col gap-2;
+  }
+
+  .company-name {
+    @apply text-xl font-semibold text-blue-700 text-center sm:text-left;
+  }
+
+  .job-title {
+    @apply text-sm font-medium text-gray-700;
+  }
+
+  .salary {
+    @apply text-sm text-green-600 font-semibold;
+  }
+
+  /* search  */
+  .search-wrapper {
+    @apply flex items-center justify-center w-full h-full;
+  }
+  .mobile-search-icon {
+    @apply fixed inset-0 bg-black bg-opacity-70 z-[999] flex items-center justify-center;
+  }
+  .desktop-search {
+    @apply hidden md:flex;
+  }
+  .popup-content {
+    @apply bg-white p-5 rounded-lg w-[90%] max-w-[400px] relative;
+  }
+
+  .close-icon {
+    @apply absolute top-[10px] right-[10px] text-[18px] cursor-pointer;
+  }
+  .custom-btn-search {
+    @apply !h-10 !max-w-[50px] !font-bold !rounded-tr-[30px] !rounded-br-[30px] !rounded-tl-none !rounded-bl-none;
+  }
+}

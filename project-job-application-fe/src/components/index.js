@@ -1,0 +1,1 @@
+/* Nơi chứa tất cả các components function */

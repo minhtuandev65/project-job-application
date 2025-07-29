@@ -1,0 +1,1 @@
+/* Nơi nhóm các tính năng theo domain */

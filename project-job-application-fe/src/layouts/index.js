@@ -1,0 +1,1 @@
+/* Nơi chứa các function layout dùng chung cho các pages như Header, Footer */

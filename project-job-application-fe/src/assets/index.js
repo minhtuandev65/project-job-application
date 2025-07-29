@@ -1,0 +1,1 @@
+/* Nơi chứa tất cả ảnh và css component pages */
