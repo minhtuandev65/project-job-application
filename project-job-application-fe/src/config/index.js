@@ -1,6 +1,4 @@
 /* Nơi chứa các tiện ích, về setting, env .... */
-
-export { DOMAIN } from "./settings/settingApiRoot/settingApiRoot";
 export {
   USER_LOGIN,
   TOKEN,

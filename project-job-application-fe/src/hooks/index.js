@@ -6,8 +6,8 @@ export { useFetchAllCandidateProfileAdmin } from "./admin/useFetchAllCandidatePr
 export { useFetchDetailCandidateProfileAdmin } from "./admin/useFetchDetailCandidateProfileAdmin/useFetchDetailCandidateProfileAdmin";
 export { useFetchListPostCompany } from "./company/useFetchListPostCompany/useFetchListPostCompany";
 export { useFetchPostByIdCompany } from "./company/useFetchPostByIdCompany/useFetchPostByIdCompany";
-export { useFetchAllCandidateProfileUser } from "./user/candidateProfile/useFetchAllCandidateProfileUser/useFetchAllCandidateProfileUser";
-export { useFetchDetailCandidateProfileUser } from "./user/candidateProfile/useFetchDetailCandidateProfileUser/useFetchDetailCandidateProfileUser";
-export { useFetchMyProfile } from "./user/useFetchMyProfile/useFetchMyProfile";
-export { useFetchSearch } from "./user/search/useFetchSearch";
-export { useFetchFilter } from "./user/filter/useFetchFilter";
+export { useFetchAllCandidateProfileUser } from "./clients/candidateProfile/useFetchAllCandidateProfileUser/useFetchAllCandidateProfileUser";
+export { useFetchDetailCandidateProfileUser } from "./clients/candidateProfile/useFetchDetailCandidateProfileUser/useFetchDetailCandidateProfileUser";
+export { useFetchMyProfile } from "./clients/useFetchMyProfile/useFetchMyProfile";
+export { useFetchSearch } from "./clients/search/useFetchSearch";
+export { useFetchFilter } from "./clients/filter/useFetchFilter";

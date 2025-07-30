@@ -1,5 +1,5 @@
 {
-  "name": "job_daily_sleep_tracker_web",
+  "name": "project-job-application-fe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,8 +7,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "cross-env BUILD_MODE=dev vite",
-    "build": "cross-env BUILD_MODE=production vite build",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest"
@@ -16,6 +16,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "@mui/material": "^7.0.4",
     "@reduxjs/toolkit": "^1.9.5",
     "@tailwindcss/vite": "^4.1.6",
@@ -30,9 +31,11 @@
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.3.0",
     "react-hook-form": "^7.56.0",
+    "react-leaflet": "^4.2.1",
     "react-redux": "^8.1.0",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
+    "react-slick": "^0.30.3",
     "redux": "^4.2.1",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.2"
@@ -53,7 +56,6 @@
     "@vitejs/plugin-react-swc": "^3.8.3",
     "autoprefixer": "^10.4.14",
     "babel-jest": "^30.0.0-beta.3",
-    "cross-env": "^10.0.0",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.19",

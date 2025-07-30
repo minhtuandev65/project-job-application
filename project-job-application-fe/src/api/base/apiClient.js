@@ -1,5 +1,5 @@
+import { DOMAIN } from "@/config/settings/settingApiRoot/settingApiRoot";
 import axios from "axios";
-import { DOMAIN } from "../../utils/setting/config";
 
 const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
 

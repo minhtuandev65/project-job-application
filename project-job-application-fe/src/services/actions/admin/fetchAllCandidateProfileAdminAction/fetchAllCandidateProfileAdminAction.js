@@ -1,7 +1,7 @@
 import { adminManageCandidateProfileApi } from "@/api";
 import { STATUS_CODE_OK } from "@/config";
 import { notificationFunction } from "@/libs";
-import { SET_FETCH_ALL_CANDIDATEPROFILE } from "@/types";
+import { SET_FETCH_ALL_CANDIDATEPROFILE_ADMIN } from "@/types";
 import { displayLoadingAction, hideLoadingAction } from "../../loadingActions/loadingActions";
 
 // Lấy danh sách hồ sơ ứng tuyển
@@ -14,7 +14,7 @@ export const fetchAllCandidateProfileAdminAction = () => {
 
       if (result.status === STATUS_CODE_OK) {
         dispatch({
-          type: SET_FETCH_ALL_CANDIDATEPROFILE,
+          type: SET_FETCH_ALL_CANDIDATEPROFILE_ADMIN,
           payload: result.data,
         });
       }

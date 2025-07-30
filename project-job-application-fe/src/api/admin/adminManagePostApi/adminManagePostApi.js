@@ -1,4 +1,5 @@
-import { apiClient, BaseApi } from "@/api";
+import apiClient from "@/api/base/apiClient";
+import BaseApi from "@/api/base/BaseApi";
 
 export class AdminManagePostApi extends BaseApi {
   //   tạo mới bài tuyển dụng

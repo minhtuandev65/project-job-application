@@ -1,4 +1,4 @@
-import { fetchListPostAction } from "@/services";
+import { fetchListPostCompanyAction } from "@/services";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -7,7 +7,7 @@ export const useFetchListPostCompany = () => {
   const { listPost } = useSelector((state) => state.companyReducer);
 
   useEffect(() => {
-    dispatch(fetchListPostAction());
+    dispatch(fetchListPostCompanyAction());
   }, [dispatch]);
 
   return { listPost };

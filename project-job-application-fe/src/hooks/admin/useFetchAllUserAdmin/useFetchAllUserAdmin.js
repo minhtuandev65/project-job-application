@@ -1,4 +1,4 @@
-import { fetchAllUserAction } from "@/services";
+import { fetchAllUserAdminAction } from "@/services";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -7,7 +7,7 @@ export const useFetchAllUserAdmin = () => {
   const { userList } = useSelector((state) => state.adminReducer);
 
   useEffect(() => {
-    dispatch(fetchAllUserAction());
+    dispatch(fetchAllUserAdminAction());
   }, [dispatch]);
 
   return { userList };

@@ -1,4 +1,6 @@
-import { apiClient, BaseApi } from "..";
+import apiClient from "../base/apiClient";
+import BaseApi from "../base/BaseApi";
+
 
 export class AuthApi extends BaseApi {
   login = (data) => {

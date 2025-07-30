@@ -1,4 +1,6 @@
-import { apiClient, BaseApi } from "@/api";
+import apiClient from "@/api/base/apiClient";
+import BaseApi from "@/api/base/BaseApi";
+
 
 export class AdminManageUserApi extends BaseApi {
   //   chặn user

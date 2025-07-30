@@ -1,4 +1,5 @@
-import { apiClient, BaseApi } from "@/api";
+import apiClient from "@/api/base/apiClient";
+import BaseApi from "@/api/base/BaseApi";
 
 export class AdminManageCandidateProfileApi extends BaseApi {
   // duyệt hồ sơ ứng tuyển
@@ -19,4 +20,5 @@ export class AdminManageCandidateProfileApi extends BaseApi {
   };
 }
 
-export const adminManageCandidateProfileApi = new AdminManageCandidateProfileApi();
+export const adminManageCandidateProfileApi =
+  new AdminManageCandidateProfileApi();

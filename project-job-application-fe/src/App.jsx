@@ -8,9 +8,11 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { useEffect } from "react";
-import Loading from "./components/loading/Loading";
-import { store } from "./store/store";
 
+import { store } from "./store/store";
+import { Loading } from "./components";
+import { Admin, Clients } from "./templates";
+import { LoginPage, ManageCandidateProfileAdminPage } from "./pages";
 
 // Pages
 
@@ -30,7 +32,19 @@ function App() {
       <BrowserRouter>
         <AppEffects />
         <Loading />
-        <Routes></Routes>
+        <Routes>
+          {/* Admin */}
+          <Route path="/admin" element={<Admin />}>
+            <Route
+              path="managecandidateprofile"
+              element={<ManageCandidateProfileAdminPage />}
+            />
+          </Route>
+          {/* Client */}
+          <Route path="/" element={<Clients />}>
+            <Route path="login" element={<LoginPage />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
     </Provider>
   );

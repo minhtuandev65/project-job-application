@@ -100,4 +100,7 @@
   .custom-btn-search {
     @apply !h-10 !max-w-[50px] !font-bold !rounded-tr-[30px] !rounded-br-[30px] !rounded-tl-none !rounded-bl-none;
   }
+  .custom-button {
+    @apply w-full h-10 !bg-black hover:!bg-white text-white font-semibold rounded-[30px];
+  }
 }

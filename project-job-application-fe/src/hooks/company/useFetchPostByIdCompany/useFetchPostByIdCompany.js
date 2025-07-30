@@ -1,4 +1,4 @@
-import { fetchPostByIdAction } from "@/services";
+import { fetchPostByIdCompanyAction } from "@/services";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -7,7 +7,7 @@ export const useFetchPostByIdCompany = (id) => {
   const { detailsPost } = useSelector((state) => state.companyReducer);
 
   useEffect(() => {
-    dispatch(fetchPostByIdAction(id));
+    dispatch(fetchPostByIdCompanyAction(id));
   }, [dispatch, id]);
 
   return { detailsPost };

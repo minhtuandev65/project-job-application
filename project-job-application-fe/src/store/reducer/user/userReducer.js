@@ -1,7 +1,7 @@
 import {
   SET_CREATE_NEW_CANDIDATEPROFILE,
-  SET_FETCH_ALL_CANDIDATEPROFILE,
-  SET_FETCH_DETAIL_CANDIDATEPROFILE,
+  SET_FETCH_ALL_CANDIDATEPROFILE_USER,
+  SET_FETCH_DETAIL_CANDIDATEPROFILE_USER,
   SET_FILTER_COMPANIES,
   SET_SEARCH_ELASTIC,
 } from "@/types";
@@ -27,13 +27,13 @@ export const userReducer = (state = initialState, action) => {
         filterData: action.payload,
       };
     }
-    case SET_FETCH_ALL_CANDIDATEPROFILE: {
+    case SET_FETCH_ALL_CANDIDATEPROFILE_USER: {
       return {
         ...state,
         listCandidateProfile: action.payload,
       };
     }
-    case SET_FETCH_DETAIL_CANDIDATEPROFILE: {
+    case SET_FETCH_DETAIL_CANDIDATEPROFILE_USER: {
       return {
         ...state,
         detailCandidateProfile: action.payload,

@@ -1,7 +1,7 @@
 import { adminManageUserApi } from "@/api";
 import { STATUS_CODE_OK } from "@/config";
 import { notificationFunction } from "@/libs";
-import { SET_FETCH_ALL_USER } from "@/types";
+import { SET_FETCH_ALL_USER_ADMIN } from "@/types";
 import { displayLoadingAction, hideLoadingAction } from "../../loadingActions/loadingActions";
 
 // lấy tất cả danh sách user
@@ -13,7 +13,7 @@ export const fetchAllUserAdminAction = () => {
 
       if (result.status === STATUS_CODE_OK) {
         dispatch({
-          type: SET_FETCH_ALL_USER,
+          type: SET_FETCH_ALL_USER_ADMIN,
           payload: result.data.users,
         });
       }

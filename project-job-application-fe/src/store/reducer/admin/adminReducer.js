@@ -1,10 +1,10 @@
 import {
   SET_ACCEPTED_CANDIDATEPROFILE,
   SET_ACTIVATE_USER,
-  SET_FETCH_ALL_CANDIDATEPROFILE,
-  SET_FETCH_ALL_USER,
-  SET_FETCH_DETAIL_CANDIDATEPROFILE,
-  SET_FETCH_DETAIL_USER,
+  SET_FETCH_ALL_CANDIDATEPROFILE_ADMIN,
+  SET_FETCH_ALL_USER_ADMIN,
+  SET_FETCH_DETAIL_CANDIDATEPROFILE_ADMIN,
+  SET_FETCH_DETAIL_USER_ADMIN,
   SET_LOCK_USER,
   SET_REJECTED_CANDIDATEPROFILE,
 } from "@/types";
@@ -17,13 +17,13 @@ const initialState = {
 };
 export const adminReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_FETCH_ALL_USER: {
+    case SET_FETCH_ALL_USER_ADMIN: {
       return {
         ...state,
         userList: action.payload,
       };
     }
-    case SET_FETCH_DETAIL_USER: {
+    case SET_FETCH_DETAIL_USER_ADMIN: {
       return {
         ...state,
         userDetail: action.payload,
@@ -59,13 +59,13 @@ export const adminReducer = (state = initialState, action) => {
         userDetail: updatedDetail,
       };
     }
-    case SET_FETCH_ALL_CANDIDATEPROFILE: {
+    case SET_FETCH_ALL_CANDIDATEPROFILE_ADMIN: {
       return {
         ...state,
         candidateProfileList: action.payload,
       };
     }
-    case SET_FETCH_DETAIL_CANDIDATEPROFILE: {
+    case SET_FETCH_DETAIL_CANDIDATEPROFILE_ADMIN: {
       return {
         ...state,
         candidateProfileDetail: action.payload,

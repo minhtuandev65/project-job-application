@@ -56,8 +56,6 @@ Router.route('/users/:userId/details').get(
     adminController.getUserDetails
 )
 Router.route('/candidateProfile').get(
-    isAuthorized,
-    hasRole(ROLE.ADMIN),
     adminController.getAllCandidateProfileAdmin
 )
 Router.route('/candidateProfile/:candidateProfileId/details').get(

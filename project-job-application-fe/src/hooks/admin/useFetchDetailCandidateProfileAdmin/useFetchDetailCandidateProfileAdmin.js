@@ -1,4 +1,4 @@
-import { fetchDetailCandidateProfileAction } from "@/services";
+import { fetchDetailCandidateProfileAdminAction } from "@/services";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -7,7 +7,7 @@ export const useFetchDetailCandidateProfileAdmin = (id) => {
   const { candidateProfileDetail } = useSelector((state) => state.adminReducer);
 
   useEffect(() => {
-    dispatch(fetchDetailCandidateProfileAction(id));
+    dispatch(fetchDetailCandidateProfileAdminAction(id));
   }, [dispatch, id]);
 
   return { candidateProfileDetail };

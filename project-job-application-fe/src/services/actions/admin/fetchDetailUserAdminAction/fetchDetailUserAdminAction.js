@@ -1,8 +1,11 @@
 import { adminManageUserApi } from "@/api";
 import { STATUS_CODE_OK } from "@/config";
 import { notificationFunction } from "@/libs";
-import { SET_FETCH_DETAIL_USER } from "@/types";
-import { displayLoadingAction, hideLoadingAction } from "../../loadingActions/loadingActions";
+import { SET_FETCH_DETAIL_USER_ADMIN } from "@/types";
+import {
+  displayLoadingAction,
+  hideLoadingAction,
+} from "../../loadingActions/loadingActions";
 
 // Lấy chi tiết một user
 export const fetchDetailUserAdminAction = (id) => {
@@ -13,7 +16,7 @@ export const fetchDetailUserAdminAction = (id) => {
 
       if (result.status === STATUS_CODE_OK) {
         dispatch({
-          type: SET_FETCH_DETAIL_USER,
+          type: SET_FETCH_DETAIL_USER_ADMIN,
           payload: result.data,
         });
       }

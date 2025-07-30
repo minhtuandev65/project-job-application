@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { Image, Select, Typography } from "antd";
-import { settingsFooter } from "@/constants";
+import { settingFooter } from "@/constants";
 const { Option } = Select;
 
 function CardItem({ data = [] }) {
@@ -32,7 +32,7 @@ function CardItem({ data = [] }) {
           </div>
 
           <div className="w-full overflow-hidden">
-            <Slider {...settingsFooter}>
+            <Slider {...settingFooter}>
               {companies.map((company) => (
                 <div key={company._id} className="px-2">
                   <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col max-w-sm md:max-w-md mx-auto h-full">

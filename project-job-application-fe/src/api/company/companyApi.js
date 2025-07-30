@@ -1,4 +1,5 @@
-import { apiClient, BaseApi } from "@/api";
+import apiClient from "../base/apiClient";
+import BaseApi from "../base/BaseApi";
 
 export class CompanyApi extends BaseApi {
   fetchListPost = () => {

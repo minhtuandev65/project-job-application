@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { useSelector } from "react-redux";
 import loadingImage from "@/assets/img/loading/loading.webp";
-export default function Loading() {
-  const { isLoading } = useSelector((state) => state.LoadingReducer);
+function Loading() {
+  const { isLoading } = useSelector((state) => state.loadingReducer);
 
   return (
     <Fragment>
@@ -29,3 +29,4 @@ export default function Loading() {
     </Fragment>
   );
 }
+export default Loading;

@@ -26,11 +26,11 @@ export { updatePostAdminAction } from "./actions/admin/updatePostAdminAction/upd
 export { fetchListPostCompanyAction } from "./actions/company/fetchListPostCompanyAction/fetchListPostCompanyAction";
 export { fetchPostByIdCompanyAction } from "./actions/company/fetchPostByIdCompanyAction/fetchPostByIdCompanyAction";
 /* user */
-export { fetchMyProfileAction } from "./actions/user/fetchMyProfile/fetchMyProfile";
-export { fetchAllCandidateProfileUserAction } from "./actions/user/candidateProfile/fetchAllCandidateProfileUserAction/fetchAllCandidateProfileUserAction";
-export { fetchDetailCandidateProfileUserAction } from "./actions/user/candidateProfile/fetchDetailCandidateProfileUserAction/fetchDetailCandidateProfileUserAction";
-export { createNewCandidateProfileUserAction } from "./actions/user/candidateProfile/createNewCandidateProfileUserAction/createNewCandidateProfileUserAction";
-export { searchElasticAction } from "./actions/user/search/searchElasticAction/searchElasticAction";
-export { filterCompaniesAction } from "./actions/user/search/filterCompaniesAction/filterCompaniesAction";
-export { uploadCvAction } from "./actions/user/uploadCvAction/uploadCvAction";
-export { updateProfileAction } from "./actions/user/updateProfileAction/updateProfileAction";
+export { fetchMyProfileAction } from "./actions/clients/fetchMyProfile/fetchMyProfile";
+export { fetchAllCandidateProfileUserAction } from "./actions/clients/candidateProfile/fetchAllCandidateProfileUserAction/fetchAllCandidateProfileUserAction";
+export { fetchDetailCandidateProfileUserAction } from "./actions/clients/candidateProfile/fetchDetailCandidateProfileUserAction/fetchDetailCandidateProfileUserAction";
+export { createNewCandidateProfileUserAction } from "./actions/clients/candidateProfile/createNewCandidateProfileUserAction/createNewCandidateProfileUserAction";
+export { searchElasticAction } from "./actions/clients/search/searchElasticAction/searchElasticAction";
+export { filterCompaniesAction } from "./actions/clients/search/filterCompaniesAction/filterCompaniesAction";
+export { uploadCvAction } from "./actions/clients/uploadCvAction/uploadCvAction";
+export { updateProfileAction } from "./actions/clients/updateProfileAction/updateProfileAction";
