@@ -73,6 +73,7 @@ function LoginPage() {
           type="primary"
           block
           aria-label="Login with LinkedIn"
+          htmlType="button"
           icon={
             <img
               src="/linkedin-icon.png"
