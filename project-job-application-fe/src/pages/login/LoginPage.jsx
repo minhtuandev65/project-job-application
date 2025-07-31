@@ -25,11 +25,10 @@ function LoginPage() {
     const clientId = import.meta.env.VITE_LINKEDIN_CLIENT_ID;
     const redirectUri = import.meta.env.VITE_LINKEDIN_OAUTH_URL;
     const scope = import.meta.env.VITE_LINKEDIN_SCOPE;
-    const state = import.meta.env.VITE_LINKEDIN_STATE;
 
     const authUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${clientId}&redirect_uri=${encodeURIComponent(
       redirectUri
-    )}&scope=${encodeURIComponent(scope)}&state=${state}`;
+    )}&scope=${encodeURIComponent(scope)}`;
     window.location.href = authUrl;
   };
 
